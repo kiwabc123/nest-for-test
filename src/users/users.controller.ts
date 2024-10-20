@@ -13,5 +13,8 @@ export class UsersController {
     }
     return await this.usersService.getUsersByDepartment();
   }
-
+  @Get('filtered')
+  async getUsersFilter() {
+    return await this.usersService.getUsersFilter()
+  }
 }
